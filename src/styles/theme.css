@@ -22,6 +22,7 @@
     --primary-foreground: #fcfcfc;
     --card: #181622;
     --border: rgba(248, 250, 252, 0.4);
+    --card-shadow: rgba(0, 0, 0, 0.5);
     --muted-primary: rgba(146, 92, 240, 0.2);
     --muted-foreground: #ad9fc8;
     --secondary-button: #27272a;
@@ -47,5 +48,6 @@
     --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
     --color-skeleton-base: var(--skeleton-base-color);
     --color-skeleton-highlight: var(--skeleton-highlight-color);
+    --card-shadow: rgba(0, 0, 0, 0.2);
   }
 }

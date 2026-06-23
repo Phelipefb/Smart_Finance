@@ -1,3 +1,5 @@
+import { AlignLeft } from 'lucide-react'
+
 interface GeminiResponse {
   candidates: {
     content: {
