@@ -1,28 +1,29 @@
-import { TrendingUp, Wallet, Clock, Moon, Sun } from "lucide-react";
-import { Button } from "./Button";
-import { useNavigate } from "react-router-dom";
-import { useTheme } from "@/hooks/useTheme";
-import { Divider } from "./Divider";
+import { TrendingUp, Wallet, Clock, Moon, Sun } from 'lucide-react'
+import { Button } from './Button'
+import { useNavigate } from 'react-router-dom'
+import { useTheme } from '@/hooks/useTheme'
+import { Divider } from './Divider'
 
 export function Header() {
-  const navigate = useNavigate();
-  const { theme, toggleTheme } = useTheme();
+  const navigate = useNavigate()
+  const { theme, toggleTheme } = useTheme()
 
   return (
     <header className="border-b border-[var(--border)] px-6 py-3">
       <nav className="flex items-center justify-between">
-        {/* Logo */}
         <div className="flex items-center gap-2">
-          <div className="bg-[var(--primary)] flex h-9 w-9 items-center justify-center rounded-full">
-            <Wallet size={20} className="stroke-current text-[var(--primary-foreground)]" />
+          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[var(--primary)]">
+            <Wallet
+              size={20}
+              className="stroke-current text-[var(--primary-foreground)]"
+            />
           </div>
           <span className="text-lg">
-            <span className="text-muted-foreground font-medium">Planej</span>
+            <span className="font-medium text-muted-foreground">Planej</span>
             <span className="font-extrabold">.ai</span>
           </span>
         </div>
 
-          {/* Actions Buttons */}
         <div className="flex items-center gap-1">
           <Button
             variant="secondary"
@@ -50,5 +51,3 @@ export function Header() {
     </header>
   )
 }
-        
-

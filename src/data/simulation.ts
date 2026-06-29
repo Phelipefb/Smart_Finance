@@ -93,7 +93,13 @@ export type SimulationFormData = Record<
   string
 >
 
+export interface ChatMessage {
+  role: 'user' | 'model'
+  content: string
+}
+
 export type SimulationRecord = SimulationFormData & {
   id: string
   insight?: InsightData
+  chatHistory?: ChatMessage[]
 }
