@@ -1,9 +1,11 @@
 # Smart Finance (Planej.ai)
 
-[![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![pnpm](https://img.shields.io/badge/package-manager-pnpm-%2300a9b5)](https://pnpm.io/)
-[![vite](https://img.shields.io/badge/bundler-vite-orange)](https://vitejs.dev/)
-[![react](https://img.shields.io/badge/framework-react-61dafb)](https://reactjs.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![pnpm](https://img.shields.io/badge/package_manager-pnpm-00A9B5?logo=pnpm&logoColor=white)](https://pnpm.io/)
+[![Vite](https://img.shields.io/badge/bundler-vite-646cff?logo=vite&logoColor=white)](https://vitejs.dev/)
+[![React](https://img.shields.io/badge/framework-react-61DAFB?logo=react&logoColor=black)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/typescript-%23007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/style-tailwind%20css-38B2AC?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 
 Aplicação web de planejamento financeiro pessoal que gera um diagnóstico e sugestões usando IA generativa (Google Gemini). Os dados da simulação são salvos no `localStorage`, a interface é uma SPA em React + TypeScript e o projeto é estilizado com Tailwind CSS.
 
