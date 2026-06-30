@@ -2,7 +2,6 @@ import 'react-loading-skeleton/dist/skeleton.css'
 
 import { useState, useRef, useEffect } from 'react'
 import Skeleton from 'react-loading-skeleton'
-import { Goal } from 'lucide-react'
 
 import { Button } from '@/components/shared/Button'
 import { Divider } from '@/components/shared/Divider'
@@ -52,6 +51,7 @@ export function AIInsightsCard({ simulationId }: AIInsightCardProps) {
     const updatedHistory = [...chatHistory, userMessage]
     setChatHistory(updatedHistory)
     setInputValue('')
+    setChatError(null)
     setIsChatLoading(true)
 
     try {
@@ -161,6 +161,12 @@ export function AIInsightsCard({ simulationId }: AIInsightCardProps) {
               </div>
             )}
           </div>
+
+          {chatError && (
+            <div className="border-destructive/20 bg-destructive/10 text-destructive mb-4 rounded-xl border px-3 py-2 text-sm">
+              {chatError}
+            </div>
+          )}
 
           <form onSubmit={handleSendMessage} className="flex gap-2">
             <input

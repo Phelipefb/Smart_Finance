@@ -1,4 +1,3 @@
-import { AlignLeft } from 'lucide-react'
 import type { SimulationRecord } from '@/data/simulation'
 
 interface GeminiResponse {
